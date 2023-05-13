@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="Css/all.min.css">
+    <!-- <link rel="stylesheet" href="Css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&family=Shantell+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Css/contact.css">
+    <link rel="icon" type="images/x-icon" href="Images/Logo.png" />
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light text-white">
+        <div class="container">
+            <a class="navbar-brand log" href="index.html"> <img src="Images/Logo.png" class="img-fluid border-rad" width="40">
+                TechShope </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row justify-content-around w-100">
+
+                    <li class="nav-item pages">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item pages">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item pages">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-cart-arrow-down"><span id="myCart" class="m-1 text-black"></span></i>
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <span id="top"></span>
+
+
+
+
+    <!--Contact US-->
+   <section class="contact container">
+    <div class="w-50 mx-auto py-3 pt-5 mb-5">
+        <h1 class="text-center fw-bolder mt-5">Contact Us</h1>
+
+
+        <label for="NameInput" class="mb-3">User Name :</label>
+        <input type="text" class="form-control mb-3" id="NameInput" onblur="validateName()" />
+        <div class="alert alert-danger d-none" role="alert" id="invalidName">
+            User Name is Invalid!
+        </div>
+        <div class="alert alert-danger d-none" role="alert" id="emptyName">
+            User Name shouldn't be empty!
+        </div>
+
+
+        <label for="EmailInput" class="mb-3">Email :</label>
+        <input type="email" class="form-control mb-3" id="EmailInput" onblur="validateEmail()" />
+        <div class="alert alert-danger d-none" role="alert" id="invalidEmail">
+            Email is Invalid!
+        </div>
+        <div class="alert alert-danger d-none" role="alert" id="emptyEmail">
+            Email shouldn't be empty!
+        </div>
+
+
+        <label for="PasswordInput" class="mb-3">Password :</label>
+        <input type="password" class="form-control mb-3" id="PasswordInput" onblur="validatePassword()" />
+        <div class="alert alert-danger d-none" role="alert" id="invalidPassword">
+            Password is Invalid!
+        </div>
+        <div class="alert alert-danger d-none" role="alert" id="emptyPassword">
+            Password shouldn't be empty!
+        </div>
+
+
+
+        <!--Buttons-->
+        <button type="submit" class="btn btn-outline-success mb-5" id="submitBtn" onclick="validateButton();">
+            Submit
+        </button>
+
+        
+
+
+    </div>
+   </section>
+
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer">
+
+            <div class="container p-3">
+
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-12">
+                        <h2>Tech shop</h2>
+                        <p class="text-dark Inf">Electronic store where you can find Falcone laptop cameras and alot of
+                            the latest technology staff</p>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-12">
+                        <h2>About Us</h2>
+                        <div class="d-flex flex-column m-2 links">
+                            <a href="#"> Service</a>
+                            <a href="#"> Contact Us</a>
+                            <a href="#"> About Us</a>
+                            <a href="#"> Way of payment</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12">
+                        <h2>Help</h2>
+                        <div class="d-flex flex-column m-2 links">
+                            <a href="#"> Support</a>
+                            <a href="#"> Our License</a>
+                            <a href="#"> Blog</a>
+                            <a href="#"> What's new</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12">
+
+                        <h2>Contact Us</h2>
+
+                        <span><i class="fa-solid fa-phone"></i></span> <span class="links">+46 123 456 789</span>
+                        <br>
+                        <span> <i class="fa-solid fa-envelope"></i> </span> <span class="links"> hello@techshop.com
+                        </span>
+                        <br>
+                        <span> <i class="fa-solid fa-location-pin"></i> </span> <span class="links"> Silictown, Great
+                            Count</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-sm-12 col-md-6 col-lg-12 ">
+                        <span><i class="fa-brands fa-facebook" href="#"></i></span>
+                        <span> <i class="fa-brands fa-facebook-messenger" href="#"></i> </span>
+                        <span> <i class="fa-brands fa-twitter" href="#"></i> </span>
+                        <span> <i class="fa-brands fa-whatsapp" href="#"></i> </span>
+
+                        <a href="#top" class="rounded-circle bg-secondary p-1 mo"> <i
+                                class="fa-solid fa-arrow-up text-black"></i></a>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Js/contact.js"></script>
+</body>
+
+</html>

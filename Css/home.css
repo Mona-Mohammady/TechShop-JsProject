@@ -1,0 +1,171 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    background: #99A98F;
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999999999;
+
+}
+
+.log {
+    color: #0A4D68;
+    font-weight: 900;
+}
+
+.pages a {
+    color: #83764F;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+i {
+    color: #83764F;
+    font-size: 20px;
+
+    padding: 13px;
+}
+
+/*Slider*/
+.C1 {
+    background-color: #F6FFDE;
+}
+
+h1 {
+    color: #0A4D68;
+}
+
+p {
+    color: gray;
+}
+
+
+/*Portfolio*/
+
+
+.Image {
+    position: relative;
+}
+
+.Layer-text {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    background-color: #99A98F;
+
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .8;
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Image:hover .Layer-text {
+    display: flex;
+
+}
+
+.BB {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+/*Categorey*/
+
+.Bttn {
+    background-color: #83764F;
+    border: #99A98F;
+}
+
+.Bttn.active {
+    background-color: #0A4D68;
+    ;
+}
+
+.Bttn:hover {
+    background-color: #99A98F;
+    color: black;
+}
+
+h5 {
+    color: #0A4D68;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* Footer*/
+
+footer {
+    padding: 2px;
+    background: #99A98F;
+}
+
+span {
+    cursor: pointer;
+}
+
+h2 {
+    color: #83764F;
+}
+
+.links a,
+.links {
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+}
+
+.links a:hover {
+    color: #0A4D68;
+}
+
+.links:hover {
+    color: #0A4D68;
+}
+
+.Inf {
+    font-size: 19px;
+}
+
+.mo {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+/*Filterrrrrrrrrrrrrrr*/
+
+.filterDiv {
+
+    display: none;
+    /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
